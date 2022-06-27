@@ -1,0 +1,24 @@
+// mobile icons
+.mobile-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  a {
+    margin: 0 5px;
+    font-size: 20px;
+    color: $primary-color;
+    &:hover {
+      transform: translateY("10px");
+    }
+  }
+}
+
+.footer {
+  margin: 1rem auto 0;
+  text-align: center;
+  span {
+    color: $paragraph-color;
+  }
+}

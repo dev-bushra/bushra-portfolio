@@ -1,0 +1,251 @@
+// min-width
+@mixin media($minWidth){
+  @media screen and (min-width: $minWidth){
+    @content;
+  }
+}
+
+// max-width
+@mixin mediaMax($maxWidth){
+  @media screen and (max-width: $maxWidth){
+    @content;
+  }
+}
+
+// 368 =>  
+@include media(368px){
+  .about-description {
+    text-align: justify;
+  }
+}
+
+// 645 => 
+@include media(645px){
+  .skills-content {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// 767 =>
+@include media(767px){
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .navbar {
+    display: flex;
+  }
+  .close-icon {
+    display: none;
+    cursor: pointer;
+  }
+  .header {
+    padding: 3rem 4rem;
+  }
+  .navbar-list {
+    display: flex;
+    margin-right: 1rem;
+    .navbar-link {
+      color: $text-color;
+      font-size: 1rem;
+    }
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .resume-container {
+    .resume-btn {
+      color: $secondary-color;
+    }
+  }
+  .boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .contact-content {
+    grid-template-columns: 200px 400px;
+    column-gap: 3rem;
+    justify-content: center;
+    margin-top: 5rem;
+    .contact-top {
+      height: max-content;
+    }
+  }
+}
+
+// 0 => 768
+@include mediaMax(768px){
+  .navbar {
+    position: absolute;
+    top: -700%;
+    right: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background: $form-color;
+    padding: 1rem 0;
+    transition: 0.6s;
+    z-index: 150;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 2px solid $primary-color;
+  }
+}
+
+// 960 =>
+@include media(960px){
+  .main-container {
+    width: 65%;
+    margin: auto;
+  }
+  .mobile-icons {
+    display: none;
+  }
+  .col {
+    position: fixed;
+    bottom: 0;
+    padding: 0 1rem;
+    margin: 0 4rem;
+    display: block;
+    .left-col {
+      left: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .left-line-container {
+      content: '';
+      height: 150px;
+      width: 1px;
+      background: $secondary-color;
+      transform: translateX(10px);
+    }
+    .left-col-icon {
+      font-size: 1.5rem;
+      color: $secondary-color;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      display: block;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color;
+        transform: translateY(-3px);
+      }
+    }
+  }
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: -5%;
+  }
+  .email-container {
+    color: $secondary-color;
+    // font-size: 1.2rem;
+    // font family !important
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: inherit;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: rotate(90deg) translate(-90px, -12px);
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .right-line-container {
+    content: '';
+    height: 150px;
+    width: 1px;
+    background: $secondary-color;
+    transform: translateX(10px);
+    z-index: 150;
+  }
+  .content-text {
+    .intro-text {
+      font-size: 1.5rem !important;
+    }
+    .name {
+      font-size: 4rem !important;
+    }
+    .sub-intro {
+      font-size: 2rem !important;
+    }
+    .banner-p {
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+// 1080 =>
+@include media(1080px){
+  .banner {
+    .container {
+      padding: 1rem 4rem;
+    }
+  }
+  .archive-section {
+    .title-sub-text {
+      font-size: 20px;
+    }
+    .underline {
+      margin-top: 1rem;
+    }
+    .title-text {
+      font-size: 45px !important;
+    }
+  }
+  .content-text {
+    .intro-text {
+      font-size: 1.2rem !important;
+    }
+    .name {
+      font-size: 4em !important;
+    }
+    .sub-intro {
+      font-size: 2.4rem !important;
+    }
+    .banner-p {
+      font-size: 1.7rem !important;
+    }
+  }
+  .about-description {
+    font-size: 1.2rem !important;
+  }
+}
+
+// 1240 =>
+@include media(1240px){
+  .skills-content {
+    grid-template-columns: repeat(3, 1fr);
+    .skill-info {
+      margin: auto;
+    }
+  }
+  .content-text {
+    .intro-text {
+      font-size: 1.3rem !important;
+    }
+    .name {
+      font-size: 5.5em !important;
+    }
+    .sub-intro {
+      font-size: 2.8rem !important;
+      line-height: 2.5rem !important;
+    }
+    .banner-p {
+      font-size: 1.7rem !important;
+    }
+  }
+  .about-description {
+    font-size: 1.2rem !important;
+  }
+}

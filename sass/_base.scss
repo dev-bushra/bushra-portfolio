@@ -1,0 +1,92 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;600&family=Barlow+Condensed:wght@400;500;600&family=Inconsolata:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+// html reset
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  body {
+  background: $background-color;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  img {
+  width: 100%;
+  height: auto;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+// base styles
+.skills-icon {
+  width: 25px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.section-title {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: $text-color;
+  display: flex;
+  align-items: center;
+  .title-number {
+    color: $primary-color;
+    margin: 0 0.6rem;
+    font-weight: 600;
+  }
+  .title-text {
+    position: relative;
+    width: max-content;
+  }
+  .underline {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 35px;
+    left: 0;
+    border-radius: 10px;
+    background: $secondary-color;
+    overflow: hidden;
+  }
+  .underline span {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 10px;
+    border-radius: 10px;
+    background: $text-color;
+    animation: light-animation 2s linear infinite;
+  }
+}

@@ -1,0 +1,58 @@
+// light animation inside the .underline (under all sections title)
+@keyframes light-animation {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100px;
+  }
+}
+
+@keyframes pp-animation {
+    0% {
+        transform: translateY(5px);
+    }
+    25% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+// move
+@keyframes move {
+    0% {
+        transform: translateY(5px);
+    }
+    25% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    75% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+// indicator
+@keyframes indicator {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev. Bushra</title>
+    <!-- links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body oncopy="return false" oncut="return false" onpaste="return false">
+    <!-- Header -->
+    <header class="header header-active" id="header">
+        <div class="logo-container">
+            <a href="#banner">
+                <img src="images/logo.png" alt="logo" class="logo-img">
+            </a>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar" id="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="#about" class="navbar-link"> <span class="number">1.</span> About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#skills" class="navbar-link"> <span class="number">2.</span> Skills</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#projects" class="navbar-link"> <span class="number">3.</span> Projects</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#contact" class="navbar-link"> <span class="number">4.</span> Contact</a>
+                </li>
+                <!-- Toggler Close Icon -->
+                <div class="close-icon" id="closeicon">
+                    <i class="css-close-icon icon"></i>
+                </div>
+            </ul>
+            <div class="resume-container">
+                <a download="" href="resources/Bushra Resume.pdf" class="resume-btn">Resume</a>
+            </div>
+        </div><!-- / .Navbar -->
+        <!-- Toggler -->
+        <div class="navbar-toggler" id="toggler">
+            <i class="uil uil-list-ui-alt toggler-icon"></i>
+        </div>
+    </header>
+
+    <!-- To Top Button -->
+    <div class="to-top-btn">
+        <a href="#banner"><i class="uil uil-angle-double-up to-top-icon"></i></a>
+    </div>
+
+    <!-- Social Links (Left Line) -->
+    <div class="col left-col">
+        <div class="social-icons">
+            <div>
+                <a href="https://www.linkedin.com/in/dev-bushra/" target="_blank">
+                    <i class="uil uil-linkedin-alt left-col-icon"></i></a>
+            </div>
+            <div>
+                <a href="https://github.com/dev-bushra" target="_blank">
+                    <i class="uil uil-github-alt left-col-icon"></i></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/dev.bushra/" target="_blank">
+                    <i class="uil uil-instagram left-col-icon"></i></a>
+            </div>
+        </div>
+        <div class="left-line-container"></div>
+    </div><!-- / .left-col -->
+
+    <!-- Email Address (Right Line) -->
+    <div class="col right-col">
+        <div class="email-container">
+            bushragtv@gmail.com
+        </div>
+        <div class="right-line-container"></div>
+    </div><!-- / .right-col -->
+
+
+    
+    <div class="main-container">
+
+        <!-- Banner -->
+        <section class="banner section" id="banner">
+            <div class="container">
+                <div class="content">
+                    <div class="content-text">
+                        <h6 class="intro-text">What's up!, Let me introduce myself</h6>
+                        <h1 class="name">Bushra Aboubida</h1>
+                        <h3 class="sub-intro">Frontend Web Developer</h3>
+                        <p class="banner-p">I develop websites & web applications..</p>
+                    </div>
+
+                    <div class="banner-btn-container">
+                        <a href="https://solo.to/dev.bushra" target="_blank" class="banner-btn">
+                            Get In touch <i class="uil uil-message icon"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="scroll-down-container">
+                    <i class="uil uil-mouse-alt mouse-icon"></i>
+                    <a href="#about">
+                        <h6 class="scroll-down">Scroll Down</h6>
+                    </a>
+                    <i class="uil uil-angle-double-down icon"></i>
+                </div>
+            </div><!-- / .container -->
+        </section>
+
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="content">
+
+                    <div class="section-title">
+                        <span class="title-number">01 . </span>
+                        <h5 class="title-text">About Me
+                            <div class="underline"><span></span></div>
+                        </h5>
+                    </div>
+
+                    <div class="about-container">
+                        <!-- Profile Image -->
+                        <div class="porfile-image-container">
+                            <div class="image-container">
+                                <img src="images/me.jpg" alt="profile image" class="profile-image">
+                            </div>
+                        </div>
+
+                        <!-- Voice Note -->
+                        <div class="voice-note-container">
+                            <audio id="player" src="resources/audio.ogg"></audio>
+                            <div class="voice-note-player">
+                                <div class="voice-note-controls">
+                                    <i class="uil uil-play" id="playIcon"></i>
+                                </div>
+                                <div class="audio-info">
+                                    <span>Voice Intro</span>
+                                    <div class="audio-progress-bar">
+                                        <div id="progress"></div>
+                                    </div>
+                                </div>
+                                <div id="current">
+                                    <span>0:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CV -->
+                        <div class="download-cv-btn-container">
+                            <a download="" href="resources/Bushra Resume.pdf" class="download-cv-btn">
+                                Download CV <i class="uil uil-import download-icon"></i>
+                            </a>
+                        </div>
+
+                    </div><!-- / .about-container -->
+
+                </div><!-- / .content -->
+            </div><!-- / .container -->
+        </section>
+
+
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <div class="container">
+
+                <div class="section-title">
+                    <span class="title-number">02 .</span>
+                    <h5 class="title-text">My Skills
+                        <div class="underline"><span></span></div>
+                    </h5>
+                </div>
+
+                <div class="skills-content">
+
+                    <!-- Frontend -->
+                    <div class="skill-info">
+                        <div class="skill-info-header">
+                            <h1 class="skill-title">Markup & Scripting Languages</h1>
+                            <span class="skill-sub-title">4 year experience</span>
+                        </div>
+                        <div class="skill-icons">
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+                            <br/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skill-info">
+                        <div class="skill-info-header">
+                            <h1 class="skill-title">Frameworks</h1>
+                            <span class="skill-sub-title">3 year experience</span>
+                        </div>
+                        <div class="skill-icons">
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"/>
+                            <img  class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"/>
+                            <img class="skill-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- <span class="skill-description">
+                    Ps: I'm willing to learn more skills as required.
+                </span> -->
+
+            </div><!-- / .container -->
+        </section>
+
+
+        <!-- Projects -->
+        <section class=" projects section" id="projects">
+            <div class="container">
+
+                <div class="section-title">
+                    <span class="title-number">03 . </span>
+                    <h5 class="title-text">My Projects
+                        <div class="underline"><span></span></div>
+                    </h5>
+                </div>
+
+                <div class="content-header">
+                    <span class="project-description">
+                        Some of projects withing my experience..
+                    </span>
+                </div>
+
+                <div class="boxes">
+
+                    <!-- Box -->
+                    <div class="box">
+                        <div class="project-container">
+                            <div class="project-container-top">
+                                <div><a href="#" class="wrapper-link indicator" target="_blank"></a></div>
+                                <a href="https://moonlit-kitsune-f418d5.netlify.app/" class="live"
+                                    target="_blank"><span>LIVE</span></a>
+                                <a href="https://github.com/dev-bushra/world-countries" class="wrapper-link"
+                                    target="_blank"><i class="uil uil-github-alt"></i></a>
+                            </div>
+                            <div class="project-image-container">
+                                <a href="https://moonlit-kitsune-f418d5.netlify.app/" target="_blank">
+                                    <img src="images/projects/world-countries.PNG" class="project-image">
+                                </a>
+                            </div>
+                            <div class="project-text-container">
+                                <h2 class="title">World Countries</h2>
+                                <p>
+                                    Vue app fetch information about countries via a RESTful API.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div><!-- / .Box -->
+
+                    <!-- Box -->
+                    <div class="box">
+                        <div class="project-container">
+                            <div class="project-container-top">
+                                <div><a href="#" class="wrapper-link indicator" target="_blank"></a></div>
+                                <a href="https://dev-bushra.github.io/covid-19/" class="live"
+                                    target="_blank"><span>LIVE</span></a>
+                                <a href="https://github.com/dev-bushra/covid-19" class="wrapper-link" target="_blank"><i
+                                        class="uil uil-github-alt"></i></a>
+                            </div>
+                            <div class="project-image-container">
+                                <a href="https://dev-bushra.github.io/covid-19/" target="_blank">
+                                    <img src="images/projects/covid-19.png" class="project-image">
+                                </a>
+                            </div>
+                            <div class="project-text-container">
+                                <h2 class="title">Covid 19</h2>
+                                <p>
+                                    Website to raise awareness of Corona developments,
+                                    health protocols and applications for your health.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div><!-- / .Box -->
+
+                    <!-- Box -->
+                    <div class="box">
+                        <div class="project-container">
+                            <div class="project-container-top">
+                                <div><a href="#" class="wrapper-link indicator" target="_blank"></a></div>
+                                <a href="https://dev-bushra.github.io/fit-gym/" class="live"
+                                    target="_blank"><span>LIVE</span></a>
+                                <a href="https://github.com/dev-bushra/fit-gym" class="wrapper-link" target="_blank"><i
+                                        class="uil uil-github-alt"></i></a>
+                            </div>
+                            <div class="project-image-container">
+                                <a href="https://dev-bushra.github.io/fit-gym/" target="_blank">
+                                    <img src="images/projects/fit-gym.png" class="project-image">
+                                </a>
+                            </div>
+                            <div class="project-text-container">
+                                <h2 class="title">Fit Gym</h2>
+                                <p>
+                                    Landing page serves a sports club with a several areas,
+                                    it can be easily modified and made suitable for your business.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div><!-- / .Box -->
+
+                </div><!-- / .Boxes -->
+
+                <div class="project-footer">
+                    <a href="projects.html">SEE MORE</a>
+                </div>
+
+            </div><!-- / .container -->
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <span class="title-number">04 . </span>
+                    <h5 class="title-text">Contact Me
+                        <div class="underline"><span></span></div>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="contact-content grid-container">
+                <div class="contact-top">
+                    <div><i class="uil uil-incoming-call contact-icon"></i>
+                        <span>
+                            <h2 class="contact-title">Call Me</h2>
+                            <span class="contact-desc">+249 999 199580</span>
+                        </span>
+                    </div>
+
+                    <div><i class="uil uil-envelope-download contact-icon"></i>
+                        <span>
+                            <h2 class="contact-title">Email </h2>
+                            <span class="contact-desc">bushra.ebox@gmail.com</span>
+                        </span>
+                    </div>
+
+                    <div><i class="uil uil-map-marker contact-icon"></i>
+                        <span>
+                            <h2 class="contact-title">Location </h2>
+                            <span class="contact-desc">Khartoum</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form action="mailto:bushra.ebox@gmail.com?subject=myform_submission" enctype="text/plain"
+                    onsubmit="location.href='thanks.html';" id="contact-form">
+
+                    <div class="form-top">
+                        <span class="field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required name="Full Name">
+                            <input type="hidden" name="_subject" value="Portifolio Message!">
+                        </span>
+
+                        <span class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" required>
+
+                            <!-- Thank you reply -->
+                            <input type="hidden" name="_next" value="https://thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
+                        </span>
+                    </div>
+
+                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Your Message"
+                        required></textarea>
+
+                    <button type="submit" onclick="document.location.href='thank-you.html'">Send <i
+                            class="uil uil-message "></i></button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Social Links (Mobile Screens) -->
+        <div class="mobile-icons">
+            <div>
+                <a href="https://www.linkedin.com/in/dev-bushra/" target="_blank">
+                    <i class="uil uil-linkedin-alt left-col-icon"></i></a>
+            </div>
+            <div>
+                <a href="https://github.com/dev-bushra" target="_blank">
+                    <i class="uil uil-github-alt left-col-icon"></i></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/dev.bushra/" target="_blank">
+                    <i class="uil uil-instagram left-col-icon"></i></a>
+            </div>
+        </div><!-- / .mobile-icons -->
+
+        <!-- Footer -->
+        <section class="section">
+            <div class="footer">
+                <span>Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    &bullet; All Rights Reserved
+                </span>
+            </div>
+        </section>
+
+    </div><!-- / .main-container -->
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- Easy Scroll Animations => unpkg.com -->
+    <script src="js/main.js"></script>
+</body>
+</html>

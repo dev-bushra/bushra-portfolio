@@ -1,0 +1,78 @@
+// banner
+.content {
+  margin: 4rem 0;
+  .content-text {
+    margin: 1rem 0;
+    .intro-text {
+      font-size: 1rem;
+      color: $primary-color;
+      padding: 1rem 0;
+      letter-spacing: 1px;
+    }
+    .name {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $text-color;
+    }
+    .sub-intro {
+      font-size: 2rem;
+      color: $secondary-color;
+      line-height: 2rem;
+      padding: 0.5rem 0;
+    }
+    .banner-p {
+      font-size: 1.3rem;
+      color: $paragraph-color;
+      padding: 1rem 0;
+      max-width: 600px;
+    }
+  }
+}
+
+// .banner-btn
+.banner-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  background: $primary-color;
+  padding: 5px 10px;
+  height: 50px; 
+  width: 200px; 
+  border-radius: 40px;
+  color: $background-color;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover-color;
+    color: $text-color;
+  }
+  .icon {
+    margin-left: 0.6rem;
+    cursor: pointer;
+  }
+}
+
+// .scroll-down
+.scroll-down-container {
+  display: flex;
+  align-items: center;
+  .scroll-down {
+    font-size: 1rem;
+    color: $primary-color;
+  }
+  .icon {
+    font-size: 1.3rem;
+    margin-left: 0.6rem;
+    color: $primary-color;
+    animation: move 0.5s infinite;
+    cursor: pointer;
+  }
+  .mouse-icon {
+    font-size: 1.3rem;
+    margin-right: 0.3rem;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}

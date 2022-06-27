@@ -1,0 +1,84 @@
+.contact-top {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  padding: 1rem;
+  div {
+    display: flex;
+    margin: 1.5rem;
+  }
+  .contact-icon {
+    font-size: 1.5rem;
+    color: $primary-color;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .contact-title {
+    font-size: 1.3rem;
+    color: $text-color;
+  }
+  .contact-desc {
+    color: $paragraph-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
+
+form {
+  padding: 1rem;
+  .form-top {
+    display: grid;
+    gap: 1rem;
+    .field {
+      display: grid;
+      padding: 1rem;
+      background: $form-color;
+      border-radius: 3px;
+      label {
+        color: $secondary-color;
+        font-weight: 600;
+      }
+      input {
+        background: transparent;
+        outline: none;
+        border: none;
+        color: $text-color;
+      }
+    }
+  }
+  textarea {
+    background: $form-color;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: $text-color;
+    width: 100%;
+    &::placeholder {
+    color: $secondary-color;
+    font-weight: 600;
+    }
+  }
+  button {
+    display: block;
+    // display: flex;
+    width: 100%;
+    border-radius: 3rem;
+    justify-content: center;
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    margin: 1rem auto;
+    font-size: 1rem;
+    background: $primary-color;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      color: $text-color;
+      background: $hover-color;
+    }
+    .uil {
+      margin-left: 0.6rem;
+    }
+  }
+}

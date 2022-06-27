@@ -1,0 +1,24 @@
+Banner:
+What's up!, Let me introduce myself
+Bushra Aboubida
+A Frontend Developer at Magnifico Co.Ltd
+I develop webapps and systems
+
+About me:
+Hello there, my name is Bushra and I'm a passionate web developer from Khartoum city, withing a strong and excellent critical-thinking, decision-making, problem-solving and clearly explaining technical matters.
+
+ I have many experience in web field and i enjoy building accessible component-based and web pages and also software systems.
+
+ I'm willing to learn more and more in my field of study to become a better developer than i was yesterday.
+
+ I have also achieved a good understanding of machine learning, as well as solid computer science foundations such as complex algorithms and code challenge type problem solving.
+
+ If you willing to hire some active and creative wed developers in your team, i will be more than ready to work with you, i love working in an active and creative environment and to be in a middle of an ambitious programming team.
+
+Hey.. Feel free to be in touch with me at anytime, i will be happy to hear form you. 
+
+Have a good day…
+
+
+Projects:
+Here are some of the projects withing my experience..

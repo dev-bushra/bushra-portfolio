@@ -1,0 +1,29 @@
+.skills-content {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  .skill-info {
+    .skill-info-header {
+      margin: 1rem 0;
+      .skill-title {
+        color: $text-color;
+      }
+      .skill-sub-title {
+        color: $secondary-color;
+        font-weight: 600;
+      }
+    }
+    .skill-icons {
+      margin: 1rem 0;
+      font-size: xx-large;
+    }
+  }
+}
+
+.skill-description {
+  color: $secondary-color;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1rem;
+  padding: 2rem 0 0;
+}

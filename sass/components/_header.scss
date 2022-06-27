@@ -1,0 +1,185 @@
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  padding: 2rem;
+  background: $background-color;
+  z-index: 100;
+  .logo-img {
+    width: 50px; 
+    height: 45px;
+  }
+  // incase i use text instate of img
+  .logo-text {
+    color: $text-color;
+    font-family: $logo-font-family;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    span {
+      font-size: 3rem;
+      color: $primary-color;
+    }
+  }
+  .toggler-icon {
+    color: $primary-color;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.header-active {
+  background: $project-card-color;
+  transition: 0.4s;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+}
+
+.navbar-list {
+  position: relative;
+  display: grid;
+  gap: 0.6rem 2rem;
+  width: 90%;
+  margin: auto;
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    .css-close-icon {
+      content: url('https://api.iconify.design/eva/close-circle-outline.svg?color=%2300eaff&width=30&height=30');
+    }
+    .icon {
+      color: $primary-color;
+      font-size: 2rem;
+      cursor: pointer;
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+.navbar-item {
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.navbar-link {
+  position: relative;
+  color: $primary-color;
+  font-size: 1.2rem;
+  font-weight: 600;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background: $hover-color;
+    height: 2px;
+    width: 0%;
+    transition: 0.3s;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    background: $primary-color;
+    height: 2px;
+    width: 0%;
+    transition: 0.8s;
+  }
+  &:hover {
+    color: $hover-color;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+  .number {
+    color: $hover-color;
+  }
+}
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  .resume-btn {
+    position: relative;
+    border: 2px solid $hover-color;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $primary-color;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      background: $hover-color;
+      z-index: -1;
+      transition: 0.2s;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      background: $background-color;
+      z-index: -1;
+      transition: 0.5s;
+    }
+    &:hover {
+      color: $text-color;
+      border: 2px solid $background-color;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+// .show style for toggler icon (click)
+.show {
+  top: 250px !important; 
+}
+
+// to top button
+.to-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.5;
+  background: $primary-color;
+  font-size: 20px;
+  padding: 8px 10px;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .to-top-icon {
+    color: $background-color;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+// columns
+// .right and left line styles is moved to media queries (breakpoints)
+.col {
+  display: none;
+}

@@ -1,0 +1,60 @@
+// colors
+@import 'colors';
+
+// variables
+@import 'variables';
+
+// keyframes
+@import 'components/keyframes';
+
+// base
+@import 'base';
+
+// header
+@import 'components/header';
+
+// banner
+@import 'components/banner';
+
+// about
+@import 'components/about';
+
+// skills
+@import 'components/skills';
+
+// projects
+@import 'components/projects';
+
+// contact
+@import 'components/contact';
+
+// footer
+@import 'components/footer';
+
+// thank you page
+@import 'components/thank-you';
+
+// media queries
+@import 'components/breakpoints';
+
+// ??
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background: $background-color;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $hover-color;
+}
+
+::selection{
+  background: $background-color;
+  color: $primary-color;
+}

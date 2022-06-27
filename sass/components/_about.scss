@@ -1,0 +1,146 @@
+.about {
+  .content {
+    // title
+    .about-text-container {
+      text-align: center;
+      padding: 1rem 0;
+      margin: auto;
+      .about-description {
+        color: $text-color;
+        font-size: 1.1rem;
+        max-width: 100%;
+        padding: 0 0.6rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: auto;
+      }
+    }
+    // image
+    .image-container {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      margin: 2rem auto 3rem;
+      border-radius: 50%;
+      overflow: hidden;
+      display: grid;
+      border: 2px solid $primary-color;
+      &:hover{
+        animation: pp-animation 2s ease-in-out infinite;
+      }
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   justify-self: center;
+      //   align-self: center;
+      //   font-size: 1.6rem;
+      //   color: $background-color;
+      //   text-align: center;
+      //   font-family: "Inconsolata", monospace;
+      //   background: $primary-color;
+      //   mix-blend-mode: screen;
+      //   height: 97%;
+      //   width: 97%;
+      //   border-radius: 50%;
+      //   overflow: hidden;
+      //   transition: all 0.7s;
+      // }
+      &:hover::before{
+        height: 0%;
+      // opacity: 0.1;
+      }
+      .profile-image {
+        width: 252px;
+        object-fit: cover;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+    // voice note
+    .voice-note-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $primary-color;
+      .voice-note-player {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 400px;
+        padding: 0.7rem 1rem;
+        // border: 3px solid $primary-color;
+        background: $background-color;
+        border-radius: 3rem;
+        #playIcon {
+          font-size: 2rem;
+          color: $primary-color;
+          cursor: pointer;
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+      span {
+        color: $primary-color;
+      }
+      #current {
+        span {
+          font-weight: 600;
+          transition: all 0.34s linear;
+        }
+      }
+      .audio-progress-bar {
+        position: absolute;
+        left: $space;
+        right: $space;
+        top: $space;
+        bottom: $space;
+        background: $project-card-color;
+        overflow: hidden;
+        border-radius: 3rem;
+        z-index: -2;
+      }
+      #progress {
+        display: blcok;
+        width: var(--progress, 0%);
+        background: $primary-color;
+        height: 100%;
+        transition: all 1s linear;
+      }
+    }
+    // download cv button
+    .download-cv-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .download-cv-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        align-items: center;
+        background: $primary-color;
+        width: max-content;
+        padding: 5px 10px;
+        height: 60px; 
+        width: 400px; 
+        border-radius: 40px;
+        color: $background-color;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+          background-color: $hover-color;
+          color: $text-color;
+        }
+        .download-icon {
+          margin-left: 0.6rem;
+        }
+      }
+    }
+  }
+}
